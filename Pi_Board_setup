@@ -1,0 +1,19 @@
+How to start raspberry board.
+***************************************************************************
+1> Os installation(debian ->linux embedded)
+	->Use win32diskmanager and select os image. 
+	->select disk drive letter.
+	->write os in SD card
+2> setup connection between Pi and PC(shh).
+        ->connect pi board to modem(either wifi or wired LAN)
+	->check Ip address of board
+	->open putty.exe and enter ip address of Pi board(for cmd windows)
+	->type user name and passward(pi->sonu)
+
+3> for GUI window
+	->install tightvnc(for displaying GUI windows)----->client
+	->type in cmd window sudo tightvncserver
+	->open tightvnc viewer(client)
+4> Now start programming with raspberry board in python
+
+*****************************************************************************
