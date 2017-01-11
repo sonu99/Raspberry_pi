@@ -1,1 +1,13 @@
 https://wiki.qt.io/Qt_for_Beginners
+
+
+
+
+1> install qt tools and library (after installing this you can directly build qt project and run)
+sudo apt-get install qt4-dev-tools libqt4-dev libqt4-dev-bin qt4-qmake
+2> write qt application.
+3> build qt application
+   qmake -project
+   qmake
+   make
+   ./a.out
