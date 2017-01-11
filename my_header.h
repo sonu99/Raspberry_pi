@@ -18,12 +18,13 @@ class My_class : public QWidget
         ~My_class(); // QtGpio destructor
     public slots: // Slot Methods
         void btnStatus_1(void);
+        void btnStatus_2(void);
+        void btnStatus_3(void);
                 
     private:      
         QPushButton *button_1, *button_2, *button_3; // We need two Buttons 
         QLabel *lblBtnState_1, *lblBtnState_2, *lblBtnState_3, *lblInputPinState; // two labels
         QVBoxLayout *vbox; // a vertical layout manager
-        QHBoxLayout *hbox1, *hbox2;
         QTimer *timer; // a timer
                        
 };
