@@ -14,3 +14,7 @@ sudo apt-get install qt4-dev-tools libqt4-dev libqt4-dev-bin qt4-qmake
    qmake
    make
    ./a.out
+   
+   
+   
+   ---------------------------------------------------------------------------------------------------------
