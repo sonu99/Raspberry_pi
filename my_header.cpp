@@ -12,22 +12,13 @@ My_class::My_class():QWidget()
     lblBtnState_3  = new QLabel("GPIO in Default state"); // instatiate labels
 
     lblInputPinState = new QLabel("Input pin value is : ?? ");
-    vbox = new QVBoxLayout(); // instantiate layout manager
-    timer = new QTimer(this); // instantiate timer....make timer child of the QtGpio class
+    
+    layout = new QFormLayout();
+    layout->addRow(button_1,  lblBtnState_1);
+    layout->addRow(button_2,  lblBtnState_2);
+    layout->addRow(button_3,  lblBtnState_3);    
 
-    vbox->addWidget(lblInputPinState); // add all controls/widgets to layout manager
-    vbox->addWidget(button_1);
-    vbox->addWidget(button_2);
-    vbox->addWidget(button_3);
-
-    vbox->addWidget(lblBtnState_1);
-    vbox->addWidget(lblBtnState_2);
-    vbox->addWidget(lblBtnState_3);
-
-    //this->setLayout(vbox); // set vbox as the window's (object's) layout manager
-                           // this step also designates all controls (QPushButton, QLabel & QVBoxLayout) as children
-                           // of the QtGpio class....
-    this->setLayout(vbox);
+    this->setLayout(layout);
     this->setWindowTitle("GUI for GPIO Toggling");   // Set window title 
 
     connect(button_1, SIGNAL(clicked()),this, SLOT(btnStatus_1()));//connect offBtn's clicked() signal to the btnOFF() slot method
@@ -35,7 +26,6 @@ My_class::My_class():QWidget()
     connect(button_3, SIGNAL(clicked()),this, SLOT(btnStatus_3()));//connect offBtn's clicked() signal to the btnOFF() slot method
 
     
-    timer->start(250); // start timer. The timeout() signal is emitted every 250ms....therefor readInputPin slot method() runs once every 250ms
 }
 
 /**********************************************************************************************

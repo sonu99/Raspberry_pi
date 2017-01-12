@@ -6,8 +6,7 @@
 #include <QVBoxLayout>
 #include <QPushButton>
 #include <QLabel>
-#include <QTimer>
-
+#include <QFormLayout>
 //QtGpio object derived from QWidget
 class My_class : public QWidget
 {
@@ -24,8 +23,8 @@ class My_class : public QWidget
     private:      
         QPushButton *button_1, *button_2, *button_3; // We need two Buttons 
         QLabel *lblBtnState_1, *lblBtnState_2, *lblBtnState_3, *lblInputPinState; // two labels
-        QVBoxLayout *vbox; // a vertical layout manager
-        QTimer *timer; // a timer
+        QFormLayout *layout; // a vertical layout manager
+        
                        
 };
 #endif 
