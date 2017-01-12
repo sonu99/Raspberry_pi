@@ -1,6 +1,9 @@
 https://wiki.qt.io/Qt_for_Beginners
 
 
+https://doc.qt.io/archives/qt-4.7/gettingstartedqt.html
+
+
 http://doc.qt.io/qt-5/layout.html
 
 
@@ -14,6 +17,8 @@ sudo apt-get install qt4-dev-tools libqt4-dev libqt4-dev-bin qt4-qmake
    qmake
    make
    ./a.out
+   
+   
    
    
    
