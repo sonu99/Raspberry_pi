@@ -1,18 +1,23 @@
+Link for qt Beginner (please start from here only)
 https://wiki.qt.io/Qt_for_Beginners
 
-
+link for understand the basic code of qt
 https://doc.qt.io/archives/qt-4.7/gettingstartedqt.html
 
-
+link for create diffrent layout in qt
 http://doc.qt.io/qt-5/layout.html
 
 
 
-
+------------------------------------------------------------------------------------------------
 1> install qt tools and library (after installing this you can directly build qt project and run)
+
 sudo apt-get install qt4-dev-tools libqt4-dev libqt4-dev-bin qt4-qmake
+
 2> write qt application.
+
 3> build qt application
+  
    qmake -project
    qmake
    make
