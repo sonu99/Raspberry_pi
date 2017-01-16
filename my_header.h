@@ -7,6 +7,8 @@
 #include <QPushButton>
 #include <QLabel>
 #include <QFormLayout>
+#include <QTimer>
+#include "mmapGpio.h"
 //QtGpio object derived from QWidget
 class My_class : public QWidget
 {
@@ -19,11 +21,14 @@ class My_class : public QWidget
         void btnStatus_1(void);
         void btnStatus_2(void);
         void btnStatus_3(void);
+        void readInputPin(void);
                 
     private:      
         QPushButton *button_1, *button_2, *button_3; // We need two Buttons 
         QLabel *lblBtnState_1, *lblBtnState_2, *lblBtnState_3, *lblInputPinState; // two labels
         QFormLayout *layout; // a vertical layout manager
+        QTimer *timer; // a timer
+        mmapGpio *rpiGpio; // a reference to the mmapGpio class to control the GPIO
         
                        
 };
